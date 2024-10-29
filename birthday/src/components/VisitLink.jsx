@@ -101,8 +101,8 @@ const VisitLink = () => {
               className="share-button"
               onClick={() => {
                 window.open(
-                  `http://localhost:5500/?name=${name}&month=${MonthToNumber(
-                  // `https://bot-mocha-nine.vercel.app/?name=${name}&month=${MonthToNumber(
+                  // `http://localhost:5500/?name=${name}&month=${MonthToNumber(
+                  `https://bot-site-chi.vercel.app/?name=${name}&month=${MonthToNumber(
 
                     month
                   )}&day=${day}`,
