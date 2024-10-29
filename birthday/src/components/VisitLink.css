@@ -1,0 +1,65 @@
+/* VisitLink Component Styling */
+.Visit {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:normal;
+    height: 100vh;
+    background-color: black;
+    
+  }
+  
+  .Link {
+    text-align: center;
+    
+    
+  }
+  
+  h2 {
+    font-size: 90px;
+    color: #ebebf1;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 50px;
+    color: #a57ad6;
+    margin-bottom: 10px;
+  }
+  
+  .timer {
+    font-size: 20px;
+    color: #8476bc;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .timer div {
+    font-weight: bold;
+    color: #bdbed3;
+    background: #8476bc;
+    margin: 20px;
+    width:90px;
+    height: 70px;
+    align:center;
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;
+
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration:underline;
+    color: #9ea4c9;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #0056b3;
+  }
+  
