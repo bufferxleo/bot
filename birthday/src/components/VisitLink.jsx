@@ -102,6 +102,8 @@ const VisitLink = () => {
               onClick={() => {
                 window.open(
                   `http://localhost:5500/?name=${name}&month=${MonthToNumber(
+                  // `https://bot-mocha-nine.vercel.app/?name=${name}&month=${MonthToNumber(
+
                     month
                   )}&day=${day}`,
                   "_blank"

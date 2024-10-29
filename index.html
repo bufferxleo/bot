@@ -7,6 +7,68 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="birthday/src/App.css" />
     <link rel="stylesheet" href="birthday/src/components/VisitLink.css" />
+    <style>
+      /* Enhanced CSS Styling */
+      /* Main Container Styling */
+      .countdown-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #181a1b;
+        font-family: Arial, sans-serif;
+        color: #ebebf1;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      /* Title Styling */
+      .countdown-title {
+        font-size: 36px;
+        color: #a57ad6;
+        margin-bottom: 40px;
+      }
+
+      /* Countdown Timer Styling */
+      .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      /* Individual Time Units Styling */
+      .timer div {
+        background: #8476bc;
+        color: #bdbed3;
+        font-weight: bold;
+        font-size: 24px;
+        border-radius: 12px;
+        width: 100px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s;
+      }
+
+      .timer div:hover {
+        transform: scale(1.1);
+      }
+
+      /* Label Styling for Time Units */
+      .time-label {
+        font-size: 14px;
+        color: #e5e6f0;
+        margin-top: 5px;
+      }
+      .bot {
+        display: inline;
+      }
+    </style>
   </head>
   <body>
     <div class="App">
@@ -16,7 +78,10 @@
           <input type="text" hidden id="month" placeholder="Enter month here" />
           <input type="text" hidden id="day" placeholder="Enter day here" />
         </div>
-        <h3 id="result" class="generated-link-box"></h3>
+        <div class="countdown-container">
+          <h3 id="bot"></h3>
+          <div id="countdown" class="timer"></div>
+        </div>
       </div>
     </div>
   </body>
